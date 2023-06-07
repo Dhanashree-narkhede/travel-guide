@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ContactUs</title>
+      <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	   <!--icons-->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <!--icons-->
+	  <link rel="stylesheet" type="text/css" href="navbar.css">
+	  
+
+	  <style type="text/css">
+	  	 #btn{
+      color: white;
+      height: 50px;
+      width: 150px;
+      background-color: #031164;
+      border: 0px;
+      margin-left: 217px;
+
+    }
+
+    form{
+    	height: 500px;
+    	width: 300px;
+    }
+.im{
+	float: left;
+	margin:20px;
+}
+
+    .cu{
+    	height: 750px;
+    	width: 300px;
+    	float: left;
+    	margin-left: 70px;
+    }
+#tb tr{
+margin-top: 20px;
+}
+	  </style>
+
+</head>
+<body>
+	<div class="header">
+		 <div id="ft">
+		 	<div class="centertext"><p><u>TRAVEL AND TOURISM</u></p><p>making memories..</p></div>
+		 </div>
+        <div id="uptraingle"></div>
+
+		<div id="bar">
+		<div id="bar1"></div></div>
+	</div>
+
+	<div class="navbar">
+		
+			<div class="left-navbar">
+			<a href="Travel&Tourism.html">Home</a>
+			<a href="Tours.html" >Tours</a>
+			<a href="gallary.html">Gallery</a>
+			<a href="contactus.html"class="active">Contact Us </a>
+			</div>
+			<!--<div class="right-navbar">
+			searchbar</div>-->
+		
+	</div>
+
+
+	<div class="big" style="height: 750px;  margin-top: -22px;">
+
+	<div class="im">
+		<img src="pic/travel6.jpg" width="500px;">
+</div>
+
+
+
+		<div class="cu">
+
+		 <p style="color: #e01f45;font-size: 40px;margin-top: 25px;"><b>Contact Us</b></p>
+  <i>We will respond to you in 24 working hours.</i></center>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  
+    <form action="action.php" method="get" id="contactus">
+		      <fieldset>
+		        <legend style="color: green;">CONTACT DETAILS</legend>
+
+		        <table id="tb">
+		          <tr>
+		            <td><label>Name</label></td>
+		            <td  style="color: white;">-----------</td>
+		                <td><input type="text" name="name" id="name" required></td>
+		              </tr>
+
+		             <tr>
+		             	<td colspan="3" style="color: white;">.</td>
+		             </tr>
+		              <tr>
+		                <td><label>Phone</label></td>
+		                <td style="color: white;">-</td>
+		                <td><input type="number" name="phone" id="phone"></td>
+		              </tr>
+		              <tr>
+		             	<td colspan="3" style="color: white;">.</td>
+		             </tr>
+
+		              <tr>
+		                <td><label>Email</label></td>
+		                <td style="color: white;">-</td>
+		                <td><input type="email" name="email" id="email" required></td>
+		              </tr>
+		          </table>
+		              
+		            </fieldset>
+
+		            <br>
+		            <br>
+		            <fieldset>
+		              <legend style="color: green;" >ABOUT TOUR</legend>
+
+		            <table >
+		          
+
+		             <tr>
+		             <td><label>Starting date for tour</label></td>
+		                <td><input type="date" name="date" id="date" required></td>
+		              </tr>
+
+		              <tr>
+		             <td><label>Total no. of persons</label></td>
+		                <td><input type="number" name="number" id="number" required></td>
+		              </tr>
+
+		            
+		              <tr>
+		                <td><label>Discribe your tour.(ex-3 day tour to ooty+ abc activities,etc.)</label></td>
+		                <td><textarea  cols="60" rows="5"  wrap="off">
+
+		                    </textarea>
+		                </td>
+		              </tr>
+		          </table>
+		              
+		            </fieldset>
+
+      </form>
+      <br>
+     
+      
+		<button type="submit" form="contactus" value="Submit" id="btn">Submit
+         
+       </button>
+	</div>
+
+	
+    </div>
+<div style="width: initial;height: 80px;">
+	
+</div>
+
+
+	<div class="footer">
+			<div class="d1footer">
+
+				<p>Travel & <br> Tourism</p>
+			</div>
+
+			<div class="d2footer">
+	      <ul class="social-network social-circle">
+	        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+	        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+	        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-youtube"></i></a></li>
+	        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-instagram"></i></a></li>
+	        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-pinterest"></i></a></li>
+	      </ul>
+	    </div>
+		  <div class="au">
+		  	   <a href="aboutus.html">About us</a><br>
+		       <a href="Tours.html">  Plan A Trip </a><br>
+		       <a href="Travel&Tourism.html #cm"> Testimonial </a><br>
+		       <a href="feedback.html"> Feedback</a>
+		       <br>
+	       <br>
+	       <br>
+	       <p style="font-size: 15px;">Designed By- Dhanashree Narkhede</p>
+		   </div>
+		
+		</div>
+
+
+
+
+
+
+
+
+
+
+		
+
+
+</body>
+</html>
