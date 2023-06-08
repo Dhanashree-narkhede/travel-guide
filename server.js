@@ -33,6 +33,7 @@ let stripeGateway = stripe(data);
 let DOMAIN = 'http://localhost:3000'
 
 app.post('/stripe-checkout', async(req,res) =>{
+    try{
     const lineItems = req.body.items.map((item) =>{
         const unitAmount = parseInt(item.price.replace(/[^0.9.-]+/g, "")*100);
         console.log('item-price:',item.price);
@@ -64,6 +65,11 @@ app.post('/stripe-checkout', async(req,res) =>{
 
     });
     res.json(session.url);
+}
+catch(err)
+{
+    res.json(err)
+}
 });
 
 app.listen(3000,() =>{
